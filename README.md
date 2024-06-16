@@ -60,17 +60,17 @@ The following initial data preparation steps were performed:
 
 #### Categorical Features
 
-[Link to Categorical Features Visualizations](/images/CATHist.png) 
+![Image](/images/CATHist.png) 
 
 Categorical features were processed to handle missing values by replacing them with the most frequent value in each column. We will also use OneHotEncoder to convert categorical variables into a format that can be provided to machine learning algorithms to do a better job in prediction. The OneHotEncoder is set to ignore any unknown categories during the transformation (handle_unknown='ignore'). This preprocessing pipeline ensures that categorical data is appropriately handled and encoded for further analysis or modeling.
 
 #### Numerical Features
 
-[Link to Numerical Features Visualizations](/images/NUMHist.png) 
+![Image](/images/NUMHist.png) 
 
-[Link to Numerical Features Visualizations Pre-Outlier Processing](/images/NUMBoxPreOut.png) 
+![Image](/images/NUMBoxPreOut.png) 
 
-[Link to Numerical Features Visualizations Post-Outlier Processing](/images/NUMBoxPreOut.png) 
+![Image](/images/NUMBoxPreOut.png) 
 
 Numerical features were processed to handle missing values by replacing them with the median value of each column. This is useful for numerical data to maintain robustness against outliers. StandardScaler was used to standardize the features by removing the mean and scaling to unit variance. This preprocessing pipeline ensures that numerical data is cleaned and scaled properly.
 
