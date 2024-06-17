@@ -65,6 +65,11 @@ Histogram Visualizations:
 
 Categorical features were processed to handle missing values by replacing them with the most frequent value in each column. We will also use OneHotEncoder to convert categorical variables into a format that can be provided to machine learning algorithms to do a better job in prediction. The OneHotEncoder is set to ignore any unknown categories during the transformation (handle_unknown='ignore'). This preprocessing pipeline ensures that categorical data is appropriately handled and encoded for further analysis or modeling.
 
+'categorical_transformer = Pipeline(steps=[
+    ('imputer', SimpleImputer(strategy='most_frequent')),
+    ('onehot', OneHotEncoder(handle_unknown='ignore'))
+])'
+
 ### Numerical Features
 
 Histogram Visualizations:
@@ -82,8 +87,7 @@ Boxplot Visualizations & Stats - post-outlier handling:
 
 In addtion to handling outliers, numerical features were processed to handle missing values by replacing them with the median value of each column. This is useful for numerical data to maintain robustness against outliers. StandardScaler was used to standardize the features by removing the mean and scaling to unit variance. This preprocessing pipeline ensures that numerical data is cleaned and scaled properly.
 
-`# Preprocessing for numerical data
-numerical_transformer = Pipeline(steps=[
+`numerical_transformer = Pipeline(steps=[
     ('imputer', SimpleImputer(strategy='median')),
     ('scaler', StandardScaler())
 ])`
