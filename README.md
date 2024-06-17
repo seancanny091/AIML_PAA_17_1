@@ -82,6 +82,12 @@ Boxplot Visualizations & Stats - post-outlier handling:
 
 In addtion to handling outliers, numerical features were processed to handle missing values by replacing them with the median value of each column. This is useful for numerical data to maintain robustness against outliers. StandardScaler was used to standardize the features by removing the mean and scaling to unit variance. This preprocessing pipeline ensures that numerical data is cleaned and scaled properly.
 
+`# Preprocessing for numerical data
+numerical_transformer = Pipeline(steps=[
+    ('imputer', SimpleImputer(strategy='median')),
+    ('scaler', StandardScaler())
+])`
+
 #### Target Variable Visualization
 
 ![Image](/images/TargVar.png) 
@@ -107,9 +113,27 @@ A simple logistic regression model was build with the following parameters:
 
 `log_reg = LogisticRegression(max_iter=1000, random_state=42)`
 
+**Logistic Regression Accuracy: 0.8970623937848993**
+
+The Logistic Regression model performs better than the baseline accuracy of 0.88.
+
+### Model Comparisons ###
+
+The performance of the Logistic Regression model was compared against KNN algorithm, Decision Tree, and SVM models, using the default settings for each of the models.
 
 
 
+
+
+
+
+##### Observations:
+
+- Logistic Regression and SVM have similar test accuracies, but Logistic Regression is much faster to train.
+- KNN has a slightly lower test accuracy but is extremely fast to train.
+- Decision Tree overfits the training data and has the lowest test accuracy among the models.
+
+Based on this comparison, Logistic Regression provides a good balance between training time and accuracy. However, further tuning and optimization of these models could potentially improve their performance.
 
 
 
