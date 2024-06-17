@@ -142,6 +142,11 @@ Based on this comparison, Logistic Regression provides a good balance between tr
 #### Feature Engineering and Exploration:
 ![Image](/images/FeatImp.png) 
 
+##### Observations:
+- The dataset provided does not explicitly contain a "gender" feature.
+- The 'age' feature is the most important by a significant margin.
+- Features like 'euribor3m', 'campaign', and nr.employed also have notable importance.
+- There is a potential to simplify the model by dropping the less important features.
 
 
 
