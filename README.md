@@ -58,28 +58,29 @@ The dataset collected is related to 17 campaigns that occurred between May 2008 
 The following initial data preparation steps were performed:
 * Remove the 'duration' feature as it is not known before a call is performed. Also, after the end of the call y is obviously known. Thus, this input should be discarded if the intention is to have a realistic predictive model.
 
-#### Categorical Features
+### Categorical Features
 
+Histogram Visualizations:
 ![Image](/images/CATHist.png) 
 
 Categorical features were processed to handle missing values by replacing them with the most frequent value in each column. We will also use OneHotEncoder to convert categorical variables into a format that can be provided to machine learning algorithms to do a better job in prediction. The OneHotEncoder is set to ignore any unknown categories during the transformation (handle_unknown='ignore'). This preprocessing pipeline ensures that categorical data is appropriately handled and encoded for further analysis or modeling.
 
-#### Numerical Features
+### Numerical Features
 
-Histogram Visualizations
+Histogram Visualizations:
 ![Image](/images/NUMHist.png) 
 
-Boxplot Visualizations & Stats - pre-outlier handling
+Boxplot Visualizations & Stats - pre-outlier handling:
 ![Image](/images/NUMBoxPreOut.png) 
 ![Image](/images/PreOutlier.png)
 
 Looking at plots of numerical/continuous features, we can see that there are outliers in the data.  These outliers were processed using the IQR method.
 
-Boxplot Visualizations & Stats - post-outlier handling
+Boxplot Visualizations & Stats - post-outlier handling:
 ![Image](/images/NUMBoxPreOut.png) 
 ![Image](/images/PostOutlier.png) 
 
 In addtion to handling outliers, numerical features were processed to handle missing values by replacing them with the median value of each column. This is useful for numerical data to maintain robustness against outliers. StandardScaler was used to standardize the features by removing the mean and scaling to unit variance. This preprocessing pipeline ensures that numerical data is cleaned and scaled properly.
 
-
+#### Target Variable Visualization
 
