@@ -93,7 +93,7 @@ The target variable is heavily imbalanced. This may negatively impact the perfor
 
 The prepared dataset was split into training and testing dataset per following code:
 
-**X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)**
+'X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)'
 
 ### Baseline Model
 
@@ -106,6 +106,8 @@ To establish a baseline performance, we can use the most frequent class in the t
 A simple logistic regression model was build with the following parameters:
 
 **log_reg = LogisticRegression(max_iter=1000, random_state=42)**
+
+
 
 
 
