@@ -125,10 +125,7 @@ The Logistic Regression model performs better than the baseline accuracy of 0.88
 
 The performance of the Logistic Regression model was compared against KNN algorithm, Decision Tree, and SVM models, using the default settings for each of the models.
 
-
-
-
-
+![Image](/images/ModelCompDefPar.png) 
 
 
 ##### Observations:
@@ -138,6 +135,9 @@ The performance of the Logistic Regression model was compared against KNN algori
 - Decision Tree overfits the training data and has the lowest test accuracy among the models.
 
 Based on this comparison, Logistic Regression provides a good balance between training time and accuracy. However, further tuning and optimization of these models could potentially improve their performance.
+
+
+### Improving the Model
 
 
 
