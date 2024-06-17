@@ -156,5 +156,30 @@ rf.fit(X_train_transformed, y_train)`
 - There is a potential to simplify the model by dropping the less important features.
 
 
+#### Hyperparameter tuning and grid search:
+
+The following parameter grids were defined for each model:
+
+`param_grids = {
+    'Logistic Regression': {
+        'C': [0.01, 0.1, 1, 10, 100],
+        'solver': ['liblinear', 'lbfgs']
+    },
+    'K-Nearest Neighbors': {
+        'n_neighbors': [3, 5, 7, 9],
+        'weights': ['uniform', 'distance']
+    },
+    'Decision Tree': {
+        'max_depth': [None, 10, 20, 30],
+        'min_samples_split': [2, 5, 10]
+    },
+    'Support Vector Machine': {
+        'C': [0.1, 1, 10, 100],
+        'kernel': ['linear', 'rbf']
+    }
+}`
+
+
+
 
 
