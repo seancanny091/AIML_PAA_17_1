@@ -140,6 +140,15 @@ Based on this comparison, Logistic Regression provides a good balance between tr
 ### Improving the Model
 
 #### Feature Engineering and Exploration:
+Feature importance was assessed using a random forest classifier:
+
+`# Train a RandomForestClassifier to get feature importances
+rf = RandomForestClassifier(random_state=42)
+rf.fit(X_train_transformed, y_train)
+
+# Get feature importances
+importances = rf.feature_importances_'
+
 ![Image](/images/FeatImp.png) 
 
 ##### Observations:
