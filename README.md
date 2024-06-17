@@ -84,3 +84,33 @@ In addtion to handling outliers, numerical features were processed to handle mis
 
 #### Target Variable Visualization
 
+![Image](/images/TargVar.png) 
+
+The target variable is heavily imbalanced. This may negatively impact the performance of the models.
+
+
+### Train/Test Data Split
+
+The prepared dataset was split into training and testing dataset per following code:
+
+__X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)__
+
+### Baseline Model
+
+To establish a baseline performance, we can use the most frequent class in the target variable as our baseline classifier. The idea is to predict the most frequent class for all instances and measure the performance of this simple strategy.
+
+Baseline Accuracy: 0.8865015780529255
+
+### Simple Logistic Regression Model
+
+A simple logistic regression model was build with the following parameters:
+
+log_reg = LogisticRegression(max_iter=1000, random_state=42)
+
+
+
+
+
+
+
+
