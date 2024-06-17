@@ -139,6 +139,8 @@ Based on this comparison, Logistic Regression provides a good balance between tr
 
 ### Improving the Model
 
+#### Feature Engineering and Exploration:
+![Image](/images/FeatImp.png) 
 
 
 
