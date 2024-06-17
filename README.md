@@ -71,13 +71,13 @@ Histogram Visualizations
 
 Boxplot Visualizations & Stats - pre-outlier handling
 ![Image](/images/NUMBoxPreOut.png) 
-![Image](/images/Pre Outlier.png) 
+![Image](/images/PreOutlier.png)
 
 Looking at plots of numerical/continuous features, we can see that there are outliers in the data.  These outliers were processed using the IQR method.
 
 Boxplot Visualizations & Stats - post-outlier handling
 ![Image](/images/NUMBoxPreOut.png) 
-![Image](/images/Post Outlier.png) 
+![Image](/images/PostOutlier.png) 
 
 In addtion to handling outliers, numerical features were processed to handle missing values by replacing them with the median value of each column. This is useful for numerical data to maintain robustness against outliers. StandardScaler was used to standardize the features by removing the mean and scaling to unit variance. This preprocessing pipeline ensures that numerical data is cleaned and scaled properly.
 
