@@ -95,7 +95,7 @@ In addtion to handling outliers, numerical features were processed to handle mis
     ('scaler', StandardScaler())
 ])`
 
-#### Target Variable Visualization
+#### Target Variable Visualization:
 
 ![Image](/images/TargVar.png) 
 
