@@ -156,9 +156,9 @@ rf.fit(X_train_transformed, y_train)`
 - There is a potential to simplify the model by dropping the less important features.
 
 
-#### Hyperparameter tuning and grid search:
+#### Hyperparameter Tuning and Grid Search:
 
-The following parameter grids were defined for each model:
+The following GridSearch parameter grids were defined for each model:
 
 `param_grids = {
     'Logistic Regression': {
@@ -178,6 +178,8 @@ The following parameter grids were defined for each model:
         'kernel': ['linear', 'rbf']
     }
 }`
+
+The following were the results for the performance of the models after GridSearch based hyperparameter optimization:
 
 
 
