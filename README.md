@@ -8,20 +8,19 @@ In this practical application, the goal is to compare the performance of the cla
 The programming language used was Python, and the libraries used were: pandas, seaborn, matplotlib, and sklearn.
 The specifics of the analysis, including code, visualizations, comments, and observations are contained in the following Jupiter Notebook:
 
-[Link to Jupyter Notebook](/PAA_17_1.jpynb)
-
-
-## Business Understanding
+[Link to Jupyter Notebook](/PAA_17_1.jpynb)  
+  
+  
+## Business Understanding  
 
 The primary business objective of this task is to develop a predictive model that can accurately identify whether a client will subscribe to a term deposit based on various demographic, socio-economic, and marketing-related features. This model will help the bank to:
-
 - Improve Marketing Campaigns
 - Optimize Resource Allocation
 - Enhance Customer Relationship Management
 - Increase Conversion Rates
-
-
-## Data Understanding
+  
+  
+## Data Understanding  
 
 The dataset contains the following features:
 
@@ -54,27 +53,27 @@ The dataset contains the following features:
 21 - y - has the client subscribed a term deposit? (binary: 'yes','no')  
 
 The dataset collected is related to 17 campaigns that occurred between May 2008 and November 2010, corresponding to a total of 79354 contacts. There are no missing values in the dataset. Relative to the size of the dataset very few duplicates found - should have minimal impacts on the models.
-
-
+  
+  
 ## Data Preparation
 
 The following initial data preparation steps were performed:
 * Remove the 'duration' feature as it is not known before a call is performed. Also, after the end of the call y is obviously known. Thus, this input should be discarded if the intention is to have a realistic predictive model.
-
+  
 ### Categorical Features
-
+  
 **Histogram Visualizations:**
 ![Image](/images/CATHist.png) 
-
+  
 Categorical features were processed to handle missing values by replacing them with the most frequent value in each column. We will also use OneHotEncoder to convert categorical variables into a format that can be provided to machine learning algorithms to do a better job in prediction. The OneHotEncoder is set to ignore any unknown categories during the transformation (handle_unknown='ignore'). This preprocessing pipeline ensures that categorical data is appropriately handled and encoded for further analysis or modeling.
 
 `categorical_transformer = Pipeline(steps=[
     ('imputer', SimpleImputer(strategy='most_frequent')),
     ('onehot', OneHotEncoder(handle_unknown='ignore'))
 ])`
-
+  
 ### Numerical Features
-
+  
 **Histogram Visualizations:**
 ![Image](/images/NUMHist.png) 
 
