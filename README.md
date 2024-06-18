@@ -75,7 +75,7 @@ Categorical features were processed to handle missing values by replacing them w
 
 ### Numerical Features
 
-Histogram Visualizations:
+**Histogram Visualizations:**
 ![Image](/images/NUMHist.png) 
 
 **Boxplot Visualizations & Stats - pre-outlier handling:**
