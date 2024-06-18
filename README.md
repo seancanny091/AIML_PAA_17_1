@@ -26,6 +26,7 @@ The primary business objective of this task is to develop a predictive model tha
 The dataset contains the following features:
 
 **Bank client attributes:**
+
 1 - age (numeric)
 2 - job : type of job (categorical: 'admin.','blue-collar','entrepreneur','housemaid','management','retired','self-employed','services','student','technician','unemployed','unknown')
 3 - marital : marital status (categorical: 'divorced','married','single','unknown'; note: 'divorced' means divorced or widowed)
