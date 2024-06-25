@@ -2,7 +2,7 @@
 
 In this practical application, the goal is to compare the performance of the classifiers we encountered in this section, namely K Nearest Neighbor, Logistic Regression, Decision Trees, and Support Vector Machines.  We will utilize a dataset related to marketing bank products over the telephone. The dataset used in the analysis is available here:
 
-[Link to Banking Dataset](/data/bank-additional-full.csv) 
+[Link to Banking Dataset](/data/bank-additional-full.csv)  
 [Link to Banking Data Descriptive Information](/data/bank-additional-names.txt)
 
 The programming language used was Python, and the libraries used were: pandas, seaborn, matplotlib, and sklearn.
